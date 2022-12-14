@@ -11,8 +11,6 @@ const storageObject = JSON.parse(storageString);
 if (storageString !== null) {
   email.value = storageObject.email;
   message.value = storageObject.message;
-  savedObject.email = storageObject.email;
-  savedObject.message = storageObject.message;
 }
 
 form.addEventListener('input', throttle(saveObject, 500));
